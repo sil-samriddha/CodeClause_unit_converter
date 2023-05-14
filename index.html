@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-content">
+        <div class="main-title">
+            <h1>Unit Converter</h1>
+        </div> <hr>
+            <div class="select-menu">
+                <form name="property_form">
+                    <span>
+                        <select class="select-property form-control" name="the_menu" size=1
+                            onChange="UpdateUnitMenu(this, document.input_form.unit_menu); UpdateUnitMenu(this, document.result_form.unit_menu)">
+                        </select>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="card-row">
+            <div class="card-col">
+                <div class="card">
+                    <form name="input_form">
+                        <input type="text" class="form-control" name="unit_input" maxlength="20" autocomplete="off"
+                            value="0" onKeyUp="CalculateUnit(document.input_form, document.result_form)">
+                        <span>
+                            <select name="unit_menu"
+                                onChange="CalculateUnit(document.result_form, document.input_form)"
+                                class="form-control">
+                            </select>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="card-col">
+                <div class="card">
+                    <form name="result_form">
+                        <input type="text" class="form-control" name="unit_input" maxlength="20" autocomplete="off"
+                            value="0" onkeyup="CalculateUnit(document.result_form, document.input_form)">
+                        <span>
+                            <select name="unit_menu"
+                                onChange="CalculateUnit(document.input_form, document.result_form)"
+                                class="form-control">
+                            </select>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

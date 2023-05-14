@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Readex+Pro:wght@500&display=swap');
+
+body{
+  background-image: url("https://static.vecteezy.com/system/resources/previews/007/188/453/original/abstract-blur-background-with-pastel-color-free-vector.jpg");
+}
+.top-content{
+  background-image: url("https://t4.ftcdn.net/jpg/02/45/72/03/360_F_245720346_a33U9SaCK86nxHgGpP1uacguNnel9qjZ.jpg");
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.main-title {
+  padding: 10px;
+  text-align: center;
+}
+.select-menu span select {
+  background-color: #EF036C;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+.select-menu option:checked{
+  background: pink;
+  color: #EF036C;
+}
+.select-menu span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.select-selected {
+  background-color: rgb(255, 255, 255);
+}
+
+.card-col {
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.card {
+  padding: 50px;
+  text-align: center;
+}
+
+.card select {
+  background-color: #EF036C;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 170%;
+  padding: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-appearance: none; /* hide default arrow in chrome OSX */
+}
+.card select:hover, .card select:focus{
+  background: pink;
+  color: #EF036C;
+}
+.card option:checked{
+  color: pink;
+  background: #EF036C;
+}
+
+.card input {
+  font-family: 'Readex Pro', sans-serif;
+  color: #EF036C;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  font-size: 170%;
+  border-radius: 30px;
+  border-color: #EF036C;
+}
